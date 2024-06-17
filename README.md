@@ -5,6 +5,8 @@ idea what I'm doing, and help is much appreciated.
 
 ## TODO
 
+(Note: this list is subject to change as I figure out what I need to do.)
+
 [ ] Add Mega Man animations
 [ ] Make Mega Man move
 [ ] Make Mega Man move _accurately_
