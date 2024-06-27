@@ -1,6 +1,7 @@
-[gd_scene load_steps=28 format=3 uid="uid://2ffjjqxrvgon"]
+[gd_scene load_steps=29 format=3 uid="uid://2ffjjqxrvgon"]
 
 [ext_resource type="Texture2D" uid="uid://b7jrnbkciy6qt" path="res://sprites/MegaMan-sprite.png" id="1_7qwh2"]
+[ext_resource type="Script" path="res://player/mega_man.gd" id="1_cfy5c"]
 [ext_resource type="Texture2D" uid="uid://dly2fwgtijc6o" path="res://sprites/MegaMan-sprite-full.png" id="2_nnrcn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sc0rw"]
@@ -206,17 +207,16 @@ _data = {
 }
 
 [node name="Mega Man" type="Node2D"]
+script = ExtResource("1_cfy5c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(11, 12)
 sprite_frames = SubResource("SpriteFrames_j45r0")
-animation = &"walk-shoot"
-frame_progress = 0.565224
+animation = &"idle"
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="StandingCollision" type="CollisionShape2D" parent="Area2D"]
-visible = false
 position = Vector2(11, 13.5)
 shape = SubResource("RectangleShape2D_fgprp")
 
